@@ -81,6 +81,10 @@ body {
 .tagline {
   color: var(--muted);
   font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.bio {
   margin-bottom: 2rem;
 }
 
@@ -149,10 +153,14 @@ body {
   margin: 1rem 0;
 }
 
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+.achievement {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.card-now {
+  border-color: var(--accent);
+  border-width: 2px;
 }
 
 .tag {
@@ -162,22 +170,6 @@ body {
   padding: 0.25rem 0.75rem;
   font-size: 0.85rem;
   color: var(--muted);
-}
-
-.card-links {
-  display: flex;
-  gap: 1rem;
-}
-
-.card-links a {
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-
-.card-links a:hover {
-  text-decoration: underline;
 }
 
 .contact-links {
