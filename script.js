@@ -1,8 +1,17 @@
+import { Typer } from "./typer.js";
+
 const nameEl = document.getElementById("nameToggle");
+const nameSuffixEl = document.getElementById("nameSuffix");
+const nameTyper = new Typer(nameSuffixEl, { stateDuration: 70, stagger: 35 });
 
 function toggleName() {
   const expanded = nameEl.classList.toggle("expanded");
   nameEl.setAttribute("aria-expanded", String(expanded));
+  if (expanded) {
+    nameTyper.in("ametkaliyeva");
+  } else {
+    nameTyper.clear();
+  }
 }
 
 nameEl.addEventListener("click", toggleName);

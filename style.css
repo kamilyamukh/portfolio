@@ -1,5 +1,5 @@
 :root {
-  --bg: #0d0d0d;
+  --bg: #000000;
   --fg: #ededed;
   --muted: #8a8a8a;
   --accent: #d99a4e;
@@ -38,12 +38,8 @@ h1 {
   user-select: none;
 }
 
-.name-hidden {
-  display: none;
-}
-
-.name.expanded .name-hidden {
-  display: inline;
+.name-suffix {
+  display: inline-block;
 }
 
 .bio {

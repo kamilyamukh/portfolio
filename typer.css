@@ -1,0 +1,44 @@
+:root {
+  --typer-fg: #ededed;
+  --typer-bg: #000000;
+  --typer-accent: #e5484d;
+  --typer-accent-ink: #000000;
+}
+
+.typer-char {
+  display: inline-block;
+  color: var(--typer-fg);
+  background: transparent;
+  border-radius: 2px;
+  padding: 0 1px;
+  transition:
+    background-color 0.08s linear,
+    color 0.08s linear,
+    border-radius 0.08s linear,
+    -webkit-text-stroke 0.08s linear;
+}
+
+.typer-char--pill {
+  background: var(--typer-accent);
+  color: var(--typer-accent-ink);
+  border-radius: 6px;
+}
+
+.typer-char--highlight {
+  background: transparent;
+  color: var(--typer-accent);
+  border-radius: 2px;
+}
+
+.typer-char--outline {
+  background: transparent;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--typer-accent);
+  border-radius: 2px;
+}
+
+.typer-char--plain {
+  background: transparent;
+  color: var(--typer-fg);
+  border-radius: 2px;
+}
