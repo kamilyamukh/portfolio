@@ -14,9 +14,9 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--fg);
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 17px;
-  line-height: 1.7;
+  font-family: "VT323", "Courier New", monospace;
+  font-size: 22px;
+  line-height: 1.6;
 }
 
 .container {
@@ -26,14 +26,28 @@ body {
 }
 
 h1 {
-  font-family: "Instrument Serif", Georgia, serif;
+  font-family: "VT323", "Courier New", monospace;
   font-weight: 400;
-  font-size: 46px;
+  font-size: 56px;
   margin: 0 0 2rem;
 }
 
+.name {
+  cursor: pointer;
+  display: inline-block;
+  user-select: none;
+}
+
+.name-hidden {
+  display: none;
+}
+
+.name.expanded .name-hidden {
+  display: inline;
+}
+
 .bio {
-  margin: 0 0 4rem;
+  margin: 0 0 3rem;
   color: var(--fg);
 }
 
@@ -45,13 +59,13 @@ section {
   text-transform: lowercase;
   letter-spacing: 0.08em;
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin: 0 0 1.25rem;
 }
 
 .achievements {
   list-style: none;
-  margin: 0;
+  margin: 0 0 4rem;
   padding: 0;
 }
 
@@ -79,12 +93,12 @@ section {
 }
 
 .project-name {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .project-year {
   color: var(--accent);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 a {
@@ -99,7 +113,7 @@ a:hover {
 footer {
   margin-top: 4rem;
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 480px) {
@@ -108,6 +122,6 @@ footer {
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 42px;
   }
 }
