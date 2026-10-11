@@ -1,6 +1,6 @@
-export const TYPER_STATES = ["pill", "highlight", "outline", "plain"];
+const TYPER_STATES = ["pill", "highlight", "outline", "plain"];
 
-export class Typer {
+class Typer {
   constructor(el, options = {}) {
     this.el = el;
     this.states = options.states || TYPER_STATES;

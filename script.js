@@ -1,5 +1,3 @@
-import { Typer } from "./typer.js";
-
 const nameEl = document.getElementById("nameToggle");
 const nameSuffixEl = document.getElementById("nameSuffix");
 const nameTyper = new Typer(nameSuffixEl, { stateDuration: 70, stagger: 35 });
